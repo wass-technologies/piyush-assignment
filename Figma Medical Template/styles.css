@@ -1,0 +1,201 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #f8f9fa;
+    color: #003366;
+    font-size: 14px;
+    margin-right: 275px;
+}
+
+.top-bar .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #003366;
+    margin-left: 275px;
+}
+
+.top-bar .logo span {
+    color: #0099ff;
+}
+
+.top-bar .info {
+    display: flex;
+    gap: 27px;
+}
+
+.top-bar .info p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.top-bar .info p span {
+    color: #0099ff;
+    font-weight: bold;
+    justify-content: left;
+}
+
+.appointment-btn {
+    background: rgb(187, 206, 242);
+    color: #003366;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+nav {
+    background: #003366;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.search-bar input {
+    padding: 10px 12px;
+    border-radius: 20px;
+    border: none;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+    background: #f0f8ff;
+}
+
+.hero .content {
+    max-width: 50%;
+}
+
+.hero h4 {
+    color: #0099ff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    color: #003366;
+    font-weight: bold;
+}
+
+.services-btn {
+    background: #0099ff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hero .doctor-img img {
+    max-width: 750px;
+    border-radius: 10px;
+}
+
+.appointments {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.book-btn {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dark-blue {
+    background: #003366;
+    color: white;
+}
+
+.light-blue {
+    background: #bfdcff;
+    color: #003366;
+}
+
+.sky-blue {
+    background: #0099ff;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .top-bar .info {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .hero .content {
+        max-width: 100%;
+    }
+
+    .appointments {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -76,8 +76,29 @@ nav {
     padding: 10px 0;
 }
 
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    padding: 10px 20px;
+    z-index: 101;
+    background: none;
+    border: none;
+    position: relative;
+}
+
+.menu-icon::before {
+    content: "☰";
+}
+
+.menu-icon.active::before {
+    content: "✖";
+}
+
 nav ul {
     list-style: none;
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,22 +137,17 @@ nav ul li a.active {
     height: 100vh;    
     position: relative;
     overflow: hidden;
+    align-items: center;
 }
 
-.left-side {
-    flex: 1; 
-    background: url("./images/Rectangle.png") no-repeat center;
-    background-size: cover; 
-}
 
 .doctor-image {
     position: absolute;
     right: 0;
     top: 0;
-    width: 100%;
+    width: auto;
     height: 100%;
     object-fit: cover;
-    z-index: 2;
 }
 
 .hero .content {
@@ -139,7 +155,7 @@ nav ul li a.active {
     left: 10%;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 3;
+    z-index: 2;
     max-width: 500px;
     color: #0d2240;
     font-family: Work Sans;
@@ -246,112 +262,6 @@ nav ul li a.active {
     color: white;
 }
 
-@media screen and (max-width: 500px) {
-    body {
-        font-size: 12px;
-        padding: 5px;
-    }
-
-    .top-bar {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 10px;
-        margin-right: 0;
-    }
-
-    .top-bar .logo {
-        font-size: 20px;
-        margin: 0;
-    }
-
-    .top-bar .info {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .appointment-btn {
-        width: 100%;
-        text-align: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .hero .content {
-        max-width: 100%;
-    }
-
-    .hero h1 {
-        font-size: 22px;
-    }
-
-    .hero .doctor-image {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
-
-    .appointments {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .book-btn {
-        width: 100%;
-        text-align: center;
-    }
-
-    .welcome-section {
-        text-align: center;
-        padding: 30px 10px;
-    }
-
-    .section-description {
-        font-size: 14px;
-        padding: 0 10px;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-column {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .newsletter {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .newsletter input {
-        width: 100%;
-        text-align: center;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-}
-
-
-
-
 .welcome-section {
     text-align: center;
     padding: 50px 20px;
@@ -405,13 +315,6 @@ nav ul li a.active {
     max-width: 800px;
     border-radius: 5px;
 }
-
-
-
-
-
-
-
 
 .footer {
     background-color: #1b2a4e;
@@ -490,4 +393,113 @@ nav ul li a.active {
     padding-top: 20px;
     margin-top: 20px;
     font-size: 14px;
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: row;
+        text-align: left;
+        padding: 10px 20px;
+        margin: 0;
+    }
+    
+    .top-bar .logo {
+        margin-left: 0;
+        font-size: 30px;
+    }
+
+    .top-bar .info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .top-bar .info p {
+        font-size: 8px;
+    }
+
+    .menu-icon {
+        display: block;
+        top: 10px;
+        left: 10px;
+    }
+
+    #nav-menu {
+        display: none;
+        flex-direction: column;
+        background: #003366;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100 vh;
+        text-align: center;
+        padding: 60px 0;
+        z-index: 100;
+    }
+
+    #nav-menu.show {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        height: 80vh;
+        text-align: center;
+    }
+
+    .left-side {
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .doctor-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hero .content {
+        width: 90%;
+        left: 5%;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero h4 {
+        font-size: 14px;
+    }
+
+    .appointment-btn, .services-btn, .book-btn {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .search-container {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    #search-input {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .appointments {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 }

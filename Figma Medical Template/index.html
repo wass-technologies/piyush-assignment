@@ -21,21 +21,25 @@
                 <p>⏰ <strong>WORK HOUR</strong> <br><span>09:00 - 08:00 Everyday</span></br></p>
                 <p>📍 <strong>LOCATION</strong> <br><span>Kolkata 700090</span></br></p>
             </div>
-            
         </div>
         <nav>
-            <ul>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul id="nav-menu">
                 <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Doctors</a></li>
                 <li><a href="#">News</a></li>
                 <li><a href="#">Contact</a></li>
-                <li class="search-container"><input type="text" id="search-input" placeholder="Search..." /><button id="search-btn">🔍</button><button class="appointment-btn">Appointment</button> </li>
+                <li class="search-container">
+                    <input type="text" id="search-input" placeholder="Search..." />
+                    <button id="search-btn">🔍</button>
+                    <button class="appointment-btn">Appointment</button> 
+                </li>
             </ul>
         </nav>
     </header>
-    <script src="script.js"></script>
+    <script src="search.js"></script>
     <section class="hero">
         <div class="left-side"></div>
         <div class="right-side">
@@ -64,7 +68,8 @@
             <img src="images/Blackdoctors 1.png" alt="Doctors Team">
         </div>
     </section>
-    
+    <script src="toggle.js"></script>
+
 
 </body>
 

@@ -6,13 +6,15 @@
         @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medical Website</title>
+    <title>MEDDICAL</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
+<body>
+    <script src="script.js"></script>
     <header>
         <div class="top-bar">
             <div class="logo">MED<span>DICAL</span></div>
@@ -22,22 +24,49 @@
                 <p>📍 <strong>LOCATION</strong> <br><span>Kolkata 700090</span></br></p>
             </div>
         </div>
-        <nav>
-            <div class="menu-icon" onclick="toggleMenu()">☰</div>
-            <ul id="nav-menu">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Doctors</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Contact</a></li>
-                <li class="search-container">
-                    <input type="text" id="search-input" placeholder="Search..." />
-                    <button id="search-btn">🔍</button>
-                    <button class="appointment-btn">Appointment</button> 
-                </li>
-            </ul>
-        </nav>
+            <!-- <nav clss="navbar">
+                <div class="navbar-container container">
+                    <input type="checkbox" name="" id="">
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <ul id="menu-items">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Doctors</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li class="search-container">
+                        <input type="text" id="search-input" placeholder="Search..." />
+                        <button id="search-btn">🔍</button>
+                        <button class="appointment-btn">Appointment</button> 
+                    </ul>
+                </div>
+            </nav> -->
+
+            <nav class="navbar">
+                <div class="navbar-container container">
+                    <input type="checkbox" name="" id="">
+                    <div class="hamburger-lines">
+                        <span class="line line1"></span>
+                        <span class="line line2"></span>
+                        <span class="line line3"></span>
+                    </div>
+                    <ul class="menu-items">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Doctors</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li class="search-container"><input type="text" id="search-input" placeholder="Search..." /><button id="search-btn">🔍</button></li>
+                        <li><button class="appointment-btn">Appointment</button></li>
+                    </ul>
+                </div>
+            </nav>
     </header>
     <script src="search.js"></script>
     <section class="hero">
@@ -69,14 +98,566 @@
         </div>
     </section>
     <script src="toggle.js"></script>
+    <script src="script.js"></script>
+    <!-- 6th Last Section -->
 
+    <section class="services-section">
+        <h3 class="subheading">CARE YOU CAN BELIEVE IN</h3>
+        <h2 class="heading">Our Services</h2>
 
+        <div class="services-container">
+            <!-- Sidebar -->
+            <div class="services-sidebar">
+                <div class="service-item">
+                    <img src="./images/Vector1.svg" alt="Free Checkup">
+                    <span>Free Checkup</span>
+                </div>
+                <div class="service-item active">
+                    <img src="./images/Vector2.svg" alt="Cardiogram">
+                    <span>Cardiogram</span>
+                </div>
+                <div class="service-item">
+                    <img src="./images/Vector3.svg" alt="Dna Testing">
+                    <span>Dna Testing</span>
+                </div>
+                <div class="service-item">
+                    <img src="./images/Vector4.svg" alt="Blood Bank">
+                    <span>Blood Bank</span>
+                </div>
+                <button class="view-all">View All</button>
+            </div>
+
+            <!-- Main Content -->
+            <div class="services-content">
+                <h3 class="content-heading">A passion for putting patients first.</h3>
+                
+                <div class="bullet-points">
+                    <div class="bullet"><span>•</span> A Passion for Healing</div>
+                    <div class="bullet"><span>•</span> 5-Star Care</div>
+                    <div class="bullet"><span>•</span> All our best</div>
+                    <div class="bullet"><span>•</span> Believe in Us</div>
+                    <div class="bullet"><span>•</span> A Legacy of Excellence</div>
+                    <div class="bullet"><span>•</span> Always Caring</div>
+                </div>
+
+                <p class="description">
+                    At our healthcare facility, your well-being is our top priority. With expert doctors, compassionate care, and cutting-edge technology, we ensure that you receive the best treatment with a personal touch. From routine checkups to critical care, we are dedicated to your health and happiness. Experience world-class medical services with a human touch.
+                </p>
+                <p class="description">
+                    Your comfort, safety, and recovery matter to us. Trust us to be by your side every step of the way! Because at our hospital, we don’t just treat patients—we care for people. 
+                </p>
+            </div>
+
+            <!-- Images -->
+            <div class="services-images">
+                <img src="./images/c1.png" alt="Doctor with patient">
+                <img src="./images/c2.png" alt="Medical team">
+            </div>
+        </div>
+    </section>
+
+    <!-- 6th Last Section -->
+
+    <!-- 5th Last Section -->
+
+    <section class="specialties-section">
+        <h3 class="subheading">ALWAYS CARING</h3>
+        <h2 class="heading">Our Specialties</h2>
+
+        <div class="specialties-grid">
+            <!-- Specialties Items -->
+            <div class="specialty-card">
+                <i href="#" class="fa fa-heart"></i>
+                <p>Neurology</p>
+            </div>
+            <div class="specialty-card dark-blue">
+                <i href="#" class="fa fa-heart"></i>
+                <p>Bones</p>
+            </div>
+            <div class="specialty-card">
+                <i href="#" class="fa fa-heart"></i>
+                <p>Oncology</p>
+            </div>
+            <div class="specialty-card">
+                <i href="#" class="fa fa-heart"></i>
+                <p>Otorhinolaryngology</p>
+            </div>
+            <div class="specialty-card">
+                <i href="#" class="fa fa-heart"></i>
+                <p>Ophthalmology</p>
+            </div>
+            <div class="specialty-card">
+                <i href="#" class="fa fa-heart"></i>
+                <p>Cardiovascular</p>
+            </div>
+            <div class="specialty-card">
+                <i href="#" class="fa fa-heart"></i>
+                <p>Pulmonology</p>
+            </div>
+            <div class="specialty-card">
+                <i href="#" class="fa fa-heart"></i>
+                <p>Renal Medicine</p>
+            </div>
+            <div class="specialty-card">
+                <i href="#" class="fa fa-heart"></i>
+                <p>Gastroenterology</p>
+            </div>
+            <div class="specialty-card">
+                <i href="#" class="fa fa-heart"></i>
+                <p>Urology</p>
+            </div>
+            <div class="specialty-card">
+                <i href="#" class="fa fa-heart"></i>
+                <p>Dermatology</p>
+            </div>
+            <div class="specialty-card">
+                <i href="#" class="fa fa-heart"></i>
+                <p>Gynaecology</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5th Last Section -->
+
+    <!-- 3rd Last Section -->
+
+    <section class="doctors-section">
+        <h3 class="trusted-care">TRUSTED CARE</h3>
+        <h2 class="our-doctors">Our Doctors</h2>
+        
+        <div class="doctors-container">
+            <div class="doctor-cards-wrapper">
+            <!-- Doctor Card 1 -->
+            <div class="doctor-card">
+                <img src="./images/first.png" alt="Doctor Image">
+                <div class="doctor-info">
+                    <h4>Doctor’s Name</h4>
+                    <p><strong>NEUROLOGY</strong></p>
+                    <div class="social-icons">
+                        <i href="#" class="fa fa-linkedin"></i>
+                        <i href="#" class="fa fa-facebook"></i>
+                        <i href="#" class="fa fa-instagram"></i>
+                    </div>
+                    <button class="view-profile">View Profile</button>
+                </div>
+            </div>
+
+            <!-- Doctor Card 2 -->
+            <div class="doctor-card">
+                <img src="./images/second.png" alt="Doctor Image">
+                <div class="doctor-info">
+                    <h4>Doctor’s Name</h4>
+                    <p><strong>NEUROLOGY</strong></p>
+                    <div class="social-icons">
+                        <i href="#" class="fa fa-linkedin"></i>
+                        <i href="#" class="fa fa-facebook"></i>
+                        <i href="#" class="fa fa-instagram"></i>
+                    </div>
+                    <button class="view-profile">View Profile</button>
+                </div>
+            </div>
+
+            <!-- Doctor Card 3 -->
+            <div class="doctor-card">
+                <img src="./images/third.png" alt="Doctor Image">
+                <div class="doctor-info">
+                    <h4>Doctor’s Name</h4>
+                    <p><strong>NEUROLOGY</strong></p>
+                    <div class="social-icons">
+                        <i href="#" class="fa fa-linkedin"></i>
+                        <i href="#" class="fa fa-facebook"></i>
+                        <i href="#" class="fa fa-instagram"></i>
+                    </div>
+                    <button class="view-profile">View Profile</button>
+                </div>
+            </div>
+
+            <!-- Doctor Card 4 -->
+            <div class="doctor-card">
+                <img src="./images/third.png" alt="Doctor Image">
+                <div class="doctor-info">
+                    <h4>Doctor’s Name</h4>
+                    <p><strong>NEUROLOGY</strong></p>
+                    <div class="social-icons">
+                        <i href="#" class="fa fa-linkedin"></i>
+                        <i href="#" class="fa fa-facebook"></i>
+                        <i href="#" class="fa fa-instagram"></i>
+                    </div>
+                    <button class="view-profile">View Profile</button>
+                </div>
+            </div>
+
+            <!-- Doctor Card 5 -->
+            <div class="doctor-card">
+                <img src="./images/second.png" alt="Doctor Image">
+                <div class="doctor-info">
+                    <h4>Doctor’s Name</h4>
+                    <p><strong>NEUROLOGY</strong></p>
+                    <div class="social-icons">
+                        <i href="#" class="fa fa-linkedin"></i>
+                        <i href="#" class="fa fa-facebook"></i>
+                        <i href="#" class="fa fa-instagram"></i>
+                    </div>
+                    <button class="view-profile">View Profile</button>
+                </div>
+            </div>
+
+            <!-- Doctor Card 6 -->
+            <div class="doctor-card">
+                <img src="./images/first.png" alt="Doctor Image">
+                <div class="doctor-info">
+                    <h4>Doctor’s Name</h4>
+                    <p><strong>NEUROLOGY</strong></p>
+                    <div class="social-icons">
+                        <i href="#" class="fa fa-linkedin"></i>
+                        <i href="#" class="fa fa-facebook"></i>
+                        <i href="#" class="fa fa-instagram"></i>
+                    </div>
+                    <button class="view-profile">View Profile</button>
+                </div>
+            </div>
+
+            <!-- Doctor Card 7 -->
+            <div class="doctor-card">
+                <img src="./images/first.png" alt="Doctor Image">
+                <div class="doctor-info">
+                    <h4>Doctor’s Name</h4>
+                    <p><strong>NEUROLOGY</strong></p>
+                    <div class="social-icons">
+                        <i href="#" class="fa fa-linkedin"></i>
+                        <i href="#" class="fa fa-facebook"></i>
+                        <i href="#" class="fa fa-instagram"></i>
+                    </div>
+                    <button class="view-profile">View Profile</button>
+                </div>
+            </div>
+
+            <!-- Doctor Card 8 -->
+            <div class="doctor-card">
+                <img src="./images/second.png" alt="Doctor Image">
+                <div class="doctor-info">
+                    <h4>Doctor’s Name</h4>
+                    <p><strong>NEUROLOGY</strong></p>
+                    <div class="social-icons">
+                        <i href="#" class="fa fa-linkedin"></i>
+                        <i href="#" class="fa fa-facebook"></i>
+                        <i href="#" class="fa fa-instagram"></i>
+                    </div>
+                    <button class="view-profile">View Profile</button>
+                </div>
+            </div>
+
+            <!-- Doctor Card 9 -->
+            <div class="doctor-card">
+                <img src="./images/third.png" alt="Doctor Image">
+                <div class="doctor-info">
+                    <h4>Doctor’s Name</h4>
+                    <p><strong>NEUROLOGY</strong></p>
+                    <div class="social-icons">
+                        <i href="#" class="fa fa-linkedin"></i>
+                        <i href="#" class="fa fa-facebook"></i>
+                        <i href="#" class="fa fa-instagram"></i>
+                    </div>
+                    <button class="view-profile">View Profile</button>
+                </div>
+            </div>
+
+                        <!-- Doctor Card 10 -->
+                        <div class="doctor-card">
+                            <img src="./images/first.png" alt="Doctor Image">
+                            <div class="doctor-info">
+                                <h4>Doctor’s Name</h4>
+                                <p><strong>NEUROLOGY</strong></p>
+                                <div class="social-icons">
+                                    <i href="#" class="fa fa-linkedin"></i>
+                                    <i href="#" class="fa fa-facebook"></i>
+                                    <i href="#" class="fa fa-instagram"></i>
+                                </div>
+                                <button class="view-profile">View Profile</button>
+                            </div>
+                        </div>
+            
+                        <!-- Doctor Card 11 -->
+                        <div class="doctor-card">
+                            <img src="./images/second.png" alt="Doctor Image">
+                            <div class="doctor-info">
+                                <h4>Doctor’s Name</h4>
+                                <p><strong>NEUROLOGY</strong></p>
+                                <div class="social-icons">
+                                    <i href="#" class="fa fa-linkedin"></i>
+                                    <i href="#" class="fa fa-facebook"></i>
+                                    <i href="#" class="fa fa-instagram"></i>
+                                </div>
+                                <button class="view-profile">View Profile</button>
+                            </div>
+                        </div>
+            
+                        <!-- Doctor Card 12 -->
+                        <div class="doctor-card">
+                            <img src="./images/third.png" alt="Doctor Image">
+                            <div class="doctor-info">
+                                <h4>Doctor’s Name</h4>
+                                <p><strong>NEUROLOGY</strong></p>
+                                <div class="social-icons">
+                                    <i href="#" class="fa fa-linkedin"></i>
+                                    <i href="#" class="fa fa-facebook"></i>
+                                    <i href="#" class="fa fa-instagram"></i>
+                                </div>
+                                <button class="view-profile">View Profile</button>
+                            </div>
+                        </div>
+            
+                        <!-- Doctor Card 13 -->
+                        <div class="doctor-card">
+                            <img src="./images/third.png" alt="Doctor Image">
+                            <div class="doctor-info">
+                                <h4>Doctor’s Name</h4>
+                                <p><strong>NEUROLOGY</strong></p>
+                                <div class="social-icons">
+                                    <i href="#" class="fa fa-linkedin"></i>
+                                    <i href="#" class="fa fa-facebook"></i>
+                                    <i href="#" class="fa fa-instagram"></i>
+                                </div>
+                                <button class="view-profile">View Profile</button>
+                            </div>
+                        </div>
+            </div>
+        </div>
+
+        <!-- Pagination Dots for News -->
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+    </section>
+
+    <!-- 2nd Last Section -->
+
+    <section class="news-section">
+        <h3 class="subheading">BETTER INFORMATION, BETTER HEALTH</h3>
+        <h2 class="heading">News</h2>
+        <div class="news-wrapper">
+        <div class="news-slider">
+        <div class="news-container">
+            <!-- Article 1 -->
+            <div class="news-card">
+                <img src="./images/card.png" alt="News Image">
+                <div class="news-content">
+                    <p class="news-date">Monday 05, September 2021 | By Author</p>
+                    <h4 class="news-title">This Article’s Title goes Here, but not too long.</h4>
+                    <div class="news-stats">
+                        <span><i href="#" class="fa fa-eye"></i> 100</span>
+                        <span><i href="#" class="fa fa-heart"></i> 150</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 2 -->
+            <div class="news-card">
+                <img src="./images/card.png" alt="News Image">
+                <div class="news-content">
+                    <p class="news-date">Monday 05, September 2021 | By Author</p>
+                    <h4 class="news-title">This Article’s Title goes Here, but not too long.</h4>
+                    <div class="news-stats">
+                        <span><i href="#" class="fa fa-eye"></i> 100</span>
+                        <span><i href="#" class="fa fa-heart"></i> 150</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 3 -->
+            <div class="news-card">
+                <img src="./images/card.png" alt="News Image">
+                <div class="news-content">
+                    <p class="news-date">Monday 05, September 2021 | By Author</p>
+                    <h4 class="news-title">This Article’s Title goes Here, but not too long.</h4>
+                    <div class="news-stats">
+                        <span><i href="#" class="fa fa-eye"></i> 100</span>
+                        <span><i href="#" class="fa fa-heart"></i> 150</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 4 -->
+            <div class="news-card">
+                <img src="./images/card.png" alt="News Image">
+                <div class="news-content">
+                    <p class="news-date">Monday 05, September 2021 | By Author</p>
+                    <h4 class="news-title">This Article’s Title goes Here, but not too long.</h4>
+                    <div class="news-stats">
+                        <span><i href="#" class="fa fa-eye"></i> 100</span>
+                        <span><i href="#" class="fa fa-heart"></i> 150</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 5 -->
+            <div class="news-card">
+                <img src="./images/card.png" alt="News Image">
+                <div class="news-content">
+                    <p class="news-date">Monday 05, September 2021 | By Author</p>
+                    <h4 class="news-title">This Article’s Title goes Here, but not too long.</h4>
+                    <div class="news-stats">
+                        <span><i href="#" class="fa fa-eye"></i> 100</span>
+                        <span><i href="#" class="fa fa-heart"></i> 150</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 6 -->
+            <div class="news-card">
+                <img src="./images/card.png" alt="News Image">
+                <div class="news-content">
+                    <p class="news-date">Monday 05, September 2021 | By Author</p>
+                    <h4 class="news-title">This Article’s Title goes Here, but not too long.</h4>
+                    <div class="news-stats">
+                        <span><i href="#" class="fa fa-eye"></i> 100</span>
+                        <span><i href="#" class="fa fa-heart"></i> 150</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 7 -->
+            <div class="news-card">
+                <img src="./images/card.png" alt="News Image">
+                <div class="news-content">
+                    <p class="news-date">Monday 05, September 2021 | By Author</p>
+                    <h4 class="news-title">This Article’s Title goes Here, but not too long.</h4>
+                    <div class="news-stats">
+                        <span><i href="#" class="fa fa-eye"></i> 100</span>
+                        <span><i href="#" class="fa fa-heart"></i> 150</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 8 -->
+            <div class="news-card">
+                <img src="./images/card.png" alt="News Image">
+                <div class="news-content">
+                    <p class="news-date">Monday 05, September 2021 | By Author</p>
+                    <h4 class="news-title">This Article’s Title goes Here, but not too long.</h4>
+                    <div class="news-stats">
+                        <span><i href="#" class="fa fa-eye"></i> 100</span>
+                        <span><i href="#" class="fa fa-heart"></i> 150</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 9 -->
+            <div class="news-card">
+                <img src="./images/card.png" alt="News Image">
+                <div class="news-content">
+                    <p class="news-date">Monday 05, September 2021 | By Author</p>
+                    <h4 class="news-title">This Article’s Title goes Here, but not too long.</h4>
+                    <div class="news-stats">
+                        <span><i href="#" class="fa fa-eye"></i> 100</span>
+                        <span><i href="#" class="fa fa-heart"></i> 150</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 10 -->
+            <div class="news-card">
+                <img src="./images/card.png" alt="News Image">
+                <div class="news-content">
+                    <p class="news-date">Monday 05, September 2021 | By Author</p>
+                    <h4 class="news-title">This Article’s Title goes Here, but not too long.</h4>
+                    <div class="news-stats">
+                        <span><i href="#" class="fa fa-eye"></i> 100</span>
+                        <span><i href="#" class="fa fa-heart"></i> 150</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 11 -->
+            <div class="news-card">
+                <img src="./images/card.png" alt="News Image">
+                <div class="news-content">
+                    <p class="news-date">Monday 05, September 2021 | By Author</p>
+                    <h4 class="news-title">This Article’s Title goes Here, but not too long.</h4>
+                    <div class="news-stats">
+                        <span><i href="#" class="fa fa-eye"></i> 100</span>
+                        <span><i href="#" class="fa fa-heart"></i> 150</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Article 12 -->
+            <div class="news-card">
+                <img src="./images/card.png" alt="News Image">
+                <div class="news-content">
+                    <p class="news-date">Monday 05, September 2021 | By Author</p>
+                    <h4 class="news-title">This Article’s Title goes Here, but not too long.</h4>
+                    <div class="news-stats">
+                        <span><i href="#" class="fa fa-eye"></i> 100</span>
+                        <span><i href="#" class="fa fa-heart"></i> 150</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <!-- Pagination Dots -->
+        <div class="news-dots">
+            <span class="news-dot active" data-slide="0"></span>
+            <span class="news-dot" data-slide="1"></span>
+            <span class="news-dot" data-slide="2"></span>
+        </div>
+    </section>
+    <script src="news_slider.js"></script>
+    <!-- Last Section -->
+
+    <section class="contact-section">
+        <h3 class="subheading">GET IN TOUCH</h3>
+        <h2 class="heading">Contact</h2>
+
+        <div class="contact-container">
+            <!-- Emergency Contact -->
+            <div class="contact-card light-blue">
+                <i href="#" class="fa fa-phone"></i>
+                <h4>EMERGENCY</h4>
+                <p>(123) 123-456-789</p>
+                <p>(237) 123-456-789</p>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-card dark-blue">
+                <i href="#" class="fa fa-map"></i>
+                <h4>LOCATION</h4>
+                <p>1234 Any Place</p>
+                <p>1234 Any Country</p>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-card light-blue">
+                <i href="#" class="fa fa-envelope"></i>
+                <h4>EMAIL</h4>
+                <p>anything123@gmail.com</p>
+                <p>anything123@gmail.com</p>
+            </div>
+
+            <!-- Working Hours -->
+            <div class="contact-card light-blue">
+                <i href="#" class="fa fa-clock-o"></i>
+                <h4>WORKING HOURS</h4>
+                <p>Mon-Sat 09:00-20:00</p>
+                <p>Sunday Emergency only</p>
+            </div>
+        </div>
+    </section>
+    <script src="doctorsScript.js"></script>
+    <script src="newsSlider.js"></script>
 </body>
+
+
+<!-- Footer Section -->
 
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-column">
-            <h2 class="footer-logo">MEDICAL</h2>
+            <h2 class="footer-logo">MEDDICAL</h2>
             <p>Leading the Way in Medical Excellence, Trusted Care.</p>
         </div>
         <div class="footer-column">

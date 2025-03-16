@@ -1,0 +1,63 @@
+.specialties-section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .subheading {
+    color: #0073e6;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+  }
+  
+  .heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .specialties-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .specialty-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .specialty-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .specialty-item span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .specialty-item.active {
+    background: #162d5b;
+    color: white;
+  }
+  
+  .specialty-item.active img {
+    filter: brightness(100);
+  }
+  

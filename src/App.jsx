@@ -5,6 +5,9 @@ import NavBar from "./components/NavBar/NavBar";
 import HeroSection from "./components/HeroSection/HeroSection";
 import AppointmentButtons from "./components/AppointmentButton/AppointmentButtons";
 import AboutSection from "./components/AboutSection/AboutSection";
+import ServicesSection from "./components/ServicesSection/ServicesSection";
+import SpecialtiesSection from "./components/SpecialtiesSection/SpecialtiesSection";
+import BookAppointment from "./components/BookAppointment/BookAppointment";
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
       <HeroSection />
       <AppointmentButtons />
       <AboutSection />
+      <ServicesSection />
+      <SpecialtiesSection />
+      <BookAppointment />
     </div>
   );
 }

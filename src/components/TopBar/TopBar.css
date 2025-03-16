@@ -2,16 +2,15 @@
   display: flex;
   justify-content: space-around;
   background-color: #f8f9fa;
-  /* padding: 10px 0; */
+  padding: 10px 0;
   font-size: 14px;
 }
 
 .logo {
   font-weight: bold;
   color: #003366;
-  font-size: 36px;
+  font-size: 30px;
   font-family: Yeseva One;
-  font-weight: 400;
 }
 
 .logo span {
@@ -19,12 +18,18 @@
 }
 
 .top-info {
+  font-family: 'Roboto', sans-serif;
   display: flex;
+  font-size: 14px;
   align-items: center;
   gap: 8px;
 }
 
+.top-info span {
+  color: #000000;
+}
+
 .top-info img {
-  width: 18px;
-  height: 18px;
+  width: 30px;
+  height: 30px;
 }

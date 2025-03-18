@@ -3,7 +3,6 @@ import "./App.css";
 import TopBar from "./components/TopBar/TopBar";
 import NavBar from "./components/NavBar/NavBar";
 import HeroSection from "./components/HeroSection/HeroSection";
-import AppointmentButtons from "./components/AppointmentButton/AppointmentButtons";
 import AboutSection from "./components/AboutSection/AboutSection";
 import ServicesSection from "./components/ServicesSection/ServicesSection";
 import SpecialtiesSection from "./components/SpecialtiesSection/SpecialtiesSection";
@@ -15,7 +14,6 @@ function App() {
       <TopBar />
       <NavBar />
       <HeroSection />
-      <AppointmentButtons />
       <AboutSection />
       <ServicesSection />
       <SpecialtiesSection />

@@ -1,100 +1,68 @@
 .navbar {
-  background: #003366;
-  padding: 15px 0;
-  opacity: 0.95;
-  z-index: 9999;
+  background: #1f2b6c;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 187px;
 }
 
 .navbar-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  max-width: 1200px;
-  width: 90%;
-  margin: auto;
-  height: 64px;
+  max-width: 1366px;
 }
 
 .menu-items {
   display: flex;
   align-items: center;
   list-style: none;
-  padding: 0;
-  margin: 0;
-  gap: 25px;
+  gap: 30px;
 }
 
 .menu-items li a {
   color: white;
+  display: flex;
   font-size: 16px;
+  justify-content: flex-start;
   font-weight: 500;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 
 .menu-items li a:hover, .menu-items li a.active {
-  color: #000000;
+  color: black;
   font-weight: bold;
 }
 
 .search-container {
+  width: 42px;
+  height: 42px;
+  background: #1f2b6c;
   display: flex;
+  justify-content: center;
   align-items: center;
-  background: white;
-  border-radius: 20px;
-  padding: 5px 12px;
+  border-radius: 12px;
+  margin-right: 12px;
 }
 
-#search-input {
-  border: none;
-  outline: none;
-  font-size: 14px;
-  padding: 5px;
-  width: 20px;
-}
-
-#search-btn {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
+.search-icon {
+  width: 18px;
 }
 
 .appointment-btn {
   background: #bfd2f8;
-  color: #003366;
+  color: #1f2b6c;
   border: none;
-  padding: 8px 15px;
-  border-radius: 20px;
-  font-weight: 300;
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 500;
   cursor: pointer;
   font-size: 16px;
   transition: background 0.3s;
 }
 
 .appointment-btn:hover {
-  background: #ffffff;
-}
-
-@media screen and (max-width: 768px) {
-  .navbar .hamburger-lines {
-      display: block;
-  }
-  
-  .menu-items {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      position: absolute;
-      top: 64px;
-      left: 0;
-      background: #003366;
-      padding: 20px 0;
-  }
-  
-  .menu-items.open {
-      display: flex;
-  }
+  background: white;
 }

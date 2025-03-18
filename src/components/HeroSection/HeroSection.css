@@ -1,29 +1,99 @@
 .hero-section {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #eef3fc;
-  padding: 50px;
+  justify-content: space-between;
+  padding: 60px 100px;
+  background: #f8f9fd;
+  position: relative;
 }
 
-.hero-text h3 {
-  color: #39a0ff;
+.hero-content {
+  max-width: 80%;
+}
+
+.hero-subtitle {
   font-size: 18px;
+  font-weight: 700;
+  color: #159eec;
+  text-transform: uppercase;
+  font-family: Work Sans;
+  letter-spacing: 16%;
 }
 
-.hero-text h1 {
-  font-size: 36px;
-  color: #162d5b;
+.hero-title {
+  font-size: 48px;
+  font-weight: bold;
+  font-family: Yeseva One;
+  color: #1f2b6c;
+  margin: 10px 0;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 
-.services-btn {
-  background-color: #39a0ff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
+.services-button {
+  background: #bfd2f8;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-radius: 50px;
+  color: #1f2b6c;
+  gap: 10px;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 500;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.hero-image img {
-  width: 300px;
+.services-button:hover {
+  background: #5a8de6;
+}
+
+.hero-image-container {
+  width: 0%;
+  height: 550px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.appointment-buttons {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  padding: 15px 25px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dark-btn {
+  background: #1f2b6c;
+  color: white;
+}
+
+.light-btn {
+  background: #bfd2f8;
+  color: #13266c;
+}
+
+.blue-btn {
+  background: #159eec;
+  color: white;
 }

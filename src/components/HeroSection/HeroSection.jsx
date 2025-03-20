@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeroSection.css";
-import doctorImage from "/demo.svg";
+import doctorImage from "/doctor.png";
 
 function HeroSection() {
   return (

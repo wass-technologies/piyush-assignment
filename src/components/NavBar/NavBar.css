@@ -1,5 +1,6 @@
 .navbar {
   background: #1f2b6c;
+  font-family: Work Sans, sans-serif;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -9,9 +10,10 @@
 
 .navbar-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   max-width: 1366px;
+  width: 100%;
 }
 
 .menu-items {
@@ -25,15 +27,19 @@
   color: white;
   display: flex;
   font-size: 16px;
-  justify-content: flex-start;
-  font-weight: 500;
+  font-weight: 400;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 
 .menu-items li a:hover, .menu-items li a.active {
-  color: black;
   font-weight: bold;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .search-container {

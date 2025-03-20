@@ -6,8 +6,7 @@ import HeroSection from "./components/HeroSection/HeroSection";
 import AboutSection from "./components/AboutSection/AboutSection";
 import ServicesSection from "./components/ServicesSection/ServicesSection";
 import SpecialtiesSection from "./components/SpecialtiesSection/SpecialtiesSection";
-import BookAppointment from "./components/BookAppointment/BookAppointment";
-
+import AppointmentForm from "./components/AppointmentForm/AppointmentForm";
 function App() {
   return (
     <div className="App">
@@ -17,7 +16,7 @@ function App() {
       <AboutSection />
       <ServicesSection />
       <SpecialtiesSection />
-      <BookAppointment />
+      <AppointmentForm />
     </div>
   );
 }

@@ -18,7 +18,9 @@ const NavBar = () => {
           <div className="search-container">
             <img src={searchIcon} alt="Search" className="search-icon" />
           </div>
-          <button className="appointment-btn">Appointment</button>
+          <div className="apt-btn">
+            <button className="appointment-btn">Appointment</button>
+          </div>
         </div>
       </div>
     </nav>

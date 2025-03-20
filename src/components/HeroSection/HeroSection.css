@@ -3,12 +3,17 @@
   align-items: center;
   justify-content: space-between;
   padding: 60px 100px;
-  background: #f8f9fd;
+  background: url("/doctorfull.png") no-repeat right center;
+  background-size: cover;
+  height: 550px;
   position: relative;
 }
 
 .hero-content {
-  max-width: 80%;
+  max-width: 50%;
+  position: relative;
+  margin-left: 35px;
+  z-index: 2;
 }
 
 .hero-subtitle {
@@ -17,7 +22,7 @@
   color: #159eec;
   text-transform: uppercase;
   font-family: Work Sans;
-  letter-spacing: 16%;
+  letter-spacing: 3px;
 }
 
 .hero-title {
@@ -27,7 +32,7 @@
   color: #1f2b6c;
   margin: 10px 0;
   line-height: 100%;
-  letter-spacing: 0%;
+  letter-spacing: 2px;
 }
 
 .services-button {
@@ -37,11 +42,12 @@
   padding-top: 13px;
   padding-bottom: 13px;
   border-radius: 50px;
-  color: #1f2b6c;
   gap: 10px;
+  margin-top: 35px;
   font-family: Work Sans;
   font-size: 16px;
   font-weight: 500;
+  border: none;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -50,37 +56,28 @@
   background: #5a8de6;
 }
 
-.hero-image-container {
-  width: 0%;
-  height: 550px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.hero-image {
-  max-width: 100%;
-  height: auto;
-}
-
 .appointment-buttons {
   position: absolute;
   bottom: -40px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 20px;
+  gap: 25px;
 }
 
 .btn {
-  padding: 15px 25px;
-  border-radius: 12px;
+  padding: 20px 25px;
+  border-radius: 5px;
   font-size: 16px;
-  font-weight: bold;
+  width: 316px;
+  height: 100px;
+  font-family: Work Sans;
+  font-weight: 400;
   cursor: pointer;
   border: none;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 40px;
 }
 
 .dark-btn {

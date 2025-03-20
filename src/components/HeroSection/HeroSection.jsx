@@ -1,6 +1,8 @@
 import React from "react";
 import "./HeroSection.css";
-import doctorImage from "/doctor.png";
+import calendarImage from "/Calendar.svg";
+import teamImage from "/Team.svg";
+import cashImage from "/Cash.svg";
 
 function HeroSection() {
   return (
@@ -11,14 +13,10 @@ function HeroSection() {
         <button className="services-button">Our Services</button>
       </div>
 
-      <div className="hero-image-container">
-        <img src={doctorImage} alt="Doctor" className="hero-image" />
-      </div>
-
       <div className="appointment-buttons">
-        <button className="btn dark-btn">📅 Book an Appointment</button>
-        <button className="btn light-btn">👥 Book an Appointment</button>
-        <button className="btn blue-btn">💰 Book an Appointment</button>
+        <button className="btn dark-btn">Book an Appointment<img src={calendarImage} /></button>
+        <button className="btn light-btn">Book an Appointment<img src={teamImage} /></button>
+        <button className="btn blue-btn">Book an Appointment<img src={cashImage} /></button>
       </div>
     </section>
   );

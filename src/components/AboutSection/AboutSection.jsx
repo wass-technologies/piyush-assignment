@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutSection.css";
-import doctorsImg from "/doctorgroup.jpg";
+import doctorsImg from "/doctorgroup.png";
 
 function AboutSection() {
   return (
@@ -14,7 +14,7 @@ function AboutSection() {
           Consequat faucibus porttitor enim et.
         </p>
         <a href="#" className="learn-more">
-          Learn More →
+          Learn More
         </a>
       </div>
       <div className="about-image">

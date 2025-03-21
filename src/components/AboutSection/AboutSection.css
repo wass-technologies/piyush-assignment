@@ -1,6 +1,7 @@
 .about-section {
     text-align: center;
     padding: 50px 20px;
+    animation: fadeIn 3s forwards 0.4s;
   }
   
   .about-text h4 {
@@ -51,7 +52,7 @@
   }
   
   .about-image img {
-    width: 90%;
-    max-width: 1000px;
+    width: 77%;
+    max-width: 1200px;
   }
   

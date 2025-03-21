@@ -30,7 +30,7 @@ function ServicesSection() {
               className={`service-item ${activeService === service.name ? "active" : ""}`}
               onClick={() => setActiveService(service.name)}
             >
-              <img src={service.icon} alt={service.name} />
+              <img src={service.icon} alt={service.name} className="icon" />
               <span>{service.name}</span>
             </div>
           ))}
@@ -39,18 +39,16 @@ function ServicesSection() {
 
         <div className="services-content">
           <h3 className="content-heading">A passion for putting patients first.</h3>
-
           <div className="bullet-points">
-            <div className="bullet"><span>•</span> A Passion for Healing</div>
-            <div className="bullet"><span>•</span> 5-Star Care</div>
-            <div className="bullet"><span>•</span> All our best</div>
-            <div className="bullet"><span>•</span> Believe in Us</div>
-            <div className="bullet"><span>•</span> A Legacy of Excellence</div>
-            <div className="bullet"><span>•</span> Always Caring</div>
+            <div className="bullet"><span>✔</span> A Passion for Healing</div>
+            <div className="bullet"><span>✔</span> 5-Star Care</div>
+            <div className="bullet"><span>✔</span> All our best</div>
+            <div className="bullet"><span>✔</span> Believe in Us</div>
+            <div className="bullet"><span>✔</span> A Legacy of Excellence</div>
+            <div className="bullet"><span>✔</span> Always Caring</div>
           </div>
-
           <p className="description">
-            At our healthcare facility, your well-being is our top priority. With expert doctors, compassionate care, and cutting-edge technology, we ensure that you receive the best treatment with a personal touch. 
+            At our healthcare facility, your well-being is our top priority. With expert doctors, compassionate care, and cutting-edge technology, we ensure that you receive the best treatment with a personal touch.
           </p>
           <p className="description">
             Your comfort, safety, and recovery matter to us. Trust us to be by your side every step of the way!
@@ -58,8 +56,8 @@ function ServicesSection() {
         </div>
 
         <div className="services-images">
-          <img src={c1} alt="Doctor with patient" />
-          <img src={c2} alt="Medical team" />
+          <img src={c1} alt="Doctor with patient" className="image-animate" />
+          <img src={c2} alt="Medical team" className="image-animate" />
         </div>
       </div>
     </section>

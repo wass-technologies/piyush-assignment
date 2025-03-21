@@ -1,5 +1,5 @@
 .navbar {
-  background: #1f2b6c;
+  background: var(--bs-main);
   font-family: Work Sans, sans-serif;
   height: 80px;
   display: flex;
@@ -20,6 +20,7 @@
   display: flex;
   align-items: center;
   list-style: none;
+  margin-left: -40px;
   gap: 30px;
 }
 

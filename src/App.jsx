@@ -7,6 +7,8 @@ import AboutSection from "./components/AboutSection/AboutSection";
 import ServicesSection from "./components/ServicesSection/ServicesSection";
 import SpecialtiesSection from "./components/SpecialtiesSection/SpecialtiesSection";
 import AppointmentForm from "./components/AppointmentForm/AppointmentForm";
+import DoctorsSection from "./components/DoctorsSection/DoctorsSection";
+
 function App() {
   return (
     <div className="App">
@@ -17,6 +19,7 @@ function App() {
       <ServicesSection />
       <SpecialtiesSection />
       <AppointmentForm />
+      <DoctorsSection />
     </div>
   );
 }

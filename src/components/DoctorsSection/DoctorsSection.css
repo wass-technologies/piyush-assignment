@@ -1,0 +1,101 @@
+.doctors-section {
+    text-align: center;
+    background: white;
+    padding: 50px 0;
+  }
+  
+  .subheading {
+    color: #159eec;
+    font-family: "Work Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .heading {
+    color: #1f2b6c;
+    font-family: "Yeseva One", serif;
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .doctors-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .doctor-card {
+    width: 300px;
+    background: #bfd2f8;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .doctor-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .doctor-info {
+    padding: 15px;
+  }
+  
+  .doctor-name {
+    color: #1f2b6c;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Work Sans;
+  }
+  
+  .doctor-specialty {
+    color: #1f2b6c;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Work Sans;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .view-profile {
+    width: 100%;
+    padding: 12px;
+    background: #1f2b6c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Work Sans", sans-serif;
+  }
+  
+  .carousel-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .carousel-btn {
+    width: 12px;
+    height: 12px;
+    background: #bfd2f8;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .carousel-btn.active {
+    background: #1f2b6c;
+  }
+  

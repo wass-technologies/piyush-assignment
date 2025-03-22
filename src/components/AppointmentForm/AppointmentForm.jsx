@@ -3,44 +3,41 @@ import "./AppointmentForm.css";
 
 const AppointmentForm = () => {
   return (
-    <div className="appointment-section">
-      <div className="appointment-text">
-        <h2>Book an Appointment</h2>
-        <p>
+    <div className="appointment-section" style={{ backgroundImage: "url(appformbg.png)" }}>
+      <div className="appointment-content">
+        <h2 className="heading">Book an Appointment</h2>
+        <p className="description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
           placerat scelerisque tortor ornare ornare. Convallis felis vitae
-          tortor augue. Velit nascetur proin massa in. Consequat faucibus
-          porttitor enim et.
+          tortor augue. Velit nascetur proin massa in.
         </p>
       </div>
-      <div className="appointment-form">
+      <form className="appointment-form">
         <div className="form-row">
-          <input type="text" placeholder="Name" className="input-field" />
-          <select className="input-field">
+          <input type="text" placeholder="Name" />
+          <select>
             <option>Gender</option>
           </select>
         </div>
         <div className="form-row">
-          <input type="email" placeholder="Email" className="input-field" />
-          <input type="text" placeholder="Phone" className="input-field" />
+          <input type="email" placeholder="Email" />
+          <input type="tel" placeholder="Phone" />
         </div>
         <div className="form-row">
-          <input type="date" className="input-field" />
-          <select className="input-field">
-            <option>Time</option>
-          </select>
+          <input type="date" placeholder="Date" />
+          <input type="time" placeholder="Time" />
         </div>
         <div className="form-row">
-          <select className="input-field">
+          <select>
             <option>Doctor</option>
           </select>
-          <select className="input-field">
+          <select>
             <option>Department</option>
           </select>
         </div>
-        <textarea className="textarea-field" placeholder="Message"></textarea>
-        <button type="submit" className="submit-btn">SUBMIT</button>
-      </div>
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">SUBMIT</button>
+      </form>
     </div>
   );
 };

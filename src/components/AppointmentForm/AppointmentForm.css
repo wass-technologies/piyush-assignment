@@ -2,76 +2,75 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px;
-  background: url('/apback.jpg') no-repeat center center/cover;
+  padding: 100px;
+  background-size: cover;
+  background-position: center;
+  color: #212124;
 }
 
-.appointment-text {
+.appointment-content {
   max-width: 40%;
 }
 
-.appointment-text h2 {
-  font-size: 28px;
-  color: #3498db;
-  font-weight: bold;
+.heading {
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Yeseva One", serif;
+  color: #159eec;
 }
 
-.appointment-text p {
+.description {
   font-size: 16px;
-  color: #333;
-  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Work Sans", sans-serif;
+  color: #212124;
 }
 
 .appointment-form {
-  width: 420px;
-  background: #0d1b4c;
-  padding: 20px;
-  border-radius: 10px;
-  color: white;
+  width: 491px;
+  height: 445px;
+  background-color: rgba(255, 255, 255, 0.0);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 10px;
 }
 
 .form-row {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  margin-bottom: 10px;
 }
 
-.input-field {
-  width: 48%;
-  padding: 12px;
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Work Sans", sans-serif;
+  background-color: #1f2b6c;
+  color: white;
   border: none;
-  border-radius: 5px;
-  background: white;
-  font-size: 14px;
+  outline: none;
+  border: 1px solid white;
 }
 
-.textarea-field {
+select {
+  appearance: none;
+  background: #1f2b6c url("dropdown-icon.png") no-repeat right 10px center;
+  background-size: 15px;
+}
+
+textarea {
+  height: 60px;
+}
+
+button {
   width: 100%;
-  height: 80px;
+  background-color: #bfd2f8;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
   padding: 10px;
   border: none;
-  border-radius: 5px;
-  background: white;
-  font-size: 14px;
-  margin-bottom: 15px;
-}
-
-.submit-btn {
-  width: 100%;
-  padding: 12px;
-  background: #b2c7f4;
-  border: none;
-  color: black;
-  font-weight: bold;
-  border-radius: 5px;
   cursor: pointer;
-  transition: 0.3s;
-}
-
-.submit-btn:hover {
-  background: #a2b9e8;
+  text-transform: uppercase;
 }

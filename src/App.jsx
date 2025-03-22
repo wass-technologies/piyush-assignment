@@ -8,6 +8,7 @@ import ServicesSection from "./components/ServicesSection/ServicesSection";
 import SpecialtiesSection from "./components/SpecialtiesSection/SpecialtiesSection";
 import AppointmentForm from "./components/AppointmentForm/AppointmentForm";
 import DoctorsSection from "./components/DoctorsSection/DoctorsSection";
+import ContactSection from "./components/ContactSection/ContactSection";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <SpecialtiesSection />
       <AppointmentForm />
       <DoctorsSection />
+      <ContactSection />
     </div>
   );
 }

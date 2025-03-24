@@ -5,11 +5,9 @@ const AppointmentForm = () => {
   return (
     <div className="appointment-section" style={{ backgroundImage: "url(appformbg.png)" }}>
       <div className="appointment-content">
-        <h2 className="heading">Book an Appointment</h2>
-        <p className="description">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-          placerat scelerisque tortor ornare ornare. Convallis felis vitae
-          tortor augue. Velit nascetur proin massa in.
+        <h2>Book an Appointment</h2>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing<br /> elit. Quisque placerat scelerisque tortor ornare ornare.<br /> Convallis felis vitae tortor augue. Velit<br /> nascetur proin massa in. Consequat faucibus<br /> porttitor enim et.
         </p>
       </div>
       <form className="appointment-form">

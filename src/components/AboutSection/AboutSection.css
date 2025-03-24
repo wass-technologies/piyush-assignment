@@ -2,6 +2,7 @@
     text-align: center;
     padding: 50px 20px;
     animation: fadeIn 3s forwards 0.4s;
+    background: #fafdfe;
   }
   
   .about-text h4 {

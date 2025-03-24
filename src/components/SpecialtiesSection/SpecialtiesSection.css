@@ -2,6 +2,7 @@
     text-align: center;
     padding: 50px 20px;
     margin-top: 50px;
+    background: #fafdfe;
   }
   
   .subheading {
@@ -26,11 +27,12 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     justify-content: center;
-    max-width: 800px;
+    max-width: 1150px;
     font-family: Work Sans, sans-serif;
     font-weight: 400;
     margin: auto;
     margin-top: 30px;
+    margin-bottom: 50px;
   }
   
   .specialty-item {

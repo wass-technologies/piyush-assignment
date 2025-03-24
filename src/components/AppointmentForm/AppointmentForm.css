@@ -9,22 +9,23 @@
 }
 
 .appointment-content {
-  max-width: 40%;
+  max-width: 1200px;
+  margin-left: 75px;
 }
 
-.heading {
-  font-size: 32px;
-  font-weight: 400;
-  font-family: "Yeseva One", serif;
+.appointment-content h2 {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: Yeseva One;
   color: #159eec;
 }
 
-.description {
+.appointment-content p {
   font-size: 16px;
   font-weight: 400;
-  font-family: "Work Sans", sans-serif;
+  font-family: Work Sans;
   color: #212124;
-}
+} 
 
 .appointment-form {
   width: 491px;
